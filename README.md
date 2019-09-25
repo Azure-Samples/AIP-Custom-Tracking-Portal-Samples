@@ -68,9 +68,9 @@ Functions lets you use keys to make it harder to access your HTTP function endpo
 While keys may help obfuscate your HTTP endpoints during development, they are not intended to secure an HTTP trigger in production. To learn more, see [Secure an HTTP endpoint in production](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook#secure-an-http-endpoint-in-production "Secure HTTP endpoint in production").
 
 ## Setup/Configure Azure Key Vault
-Although Azure Key Vault is an optional component, we highly recommend it. As a bonus, it’s already wired up on both Azure Functions.  
+Although Azure Key Vault is an optional component, we highly recommend it. As a bonus, it’s already wired up on both Azure Functions.    
 **TODO:** Wire up Azure Key Vault on the ASP.NET Web app in this solution.  
-**NOTE** - Make sure you follow the [managed identities]( https://docs.microsoft.com/en-us/azure/app-service/overview-managed-identity#creating-an-app-with-an-identity "Tenant ID") instructions as well if you decide to use Key Vault.
+**NOTE** Make sure you follow the [managed identities]( https://docs.microsoft.com/en-us/azure/app-service/overview-managed-identity#creating-an-app-with-an-identity "Tenant ID") instructions as well if you decide to use Key Vault.
 
 Please follow Jeff’s excellent walkthrough on how to setup Key Vault: [Configure Azure Key Vault]( https://medium.com/statuscode/getting-key-vault-secrets-in-azure-functions-37620fd20a0b "Tenant ID")
 
@@ -94,13 +94,8 @@ Use the table below to find the value for each setting and update the Web.config
 The presentation layer of this solution makes an HTTP request to the Azure Functions above and needs to be updated. 
 Update the <APP_NAME> and <FUNCTION_NAME> inside the **Default.aspx.cs** file with your own values. The <APP_NAME> refers to the name of the Function app in Azure Apps Services.
 
-## Setup/Configure Azure Key Vault
-Although Azure Key Vault is an optional component, we highly recommend it. As a bonus, it’s already wired up on both Azure Functions. 
-**TODO:** Wire up Azure Key Vault on the ASP.NET Web app in this solution.
-
-Please follow Jeff’s excellent walkthrough to setup Key Vault: [Configure Azure Key Vault]( https://medium.com/statuscode/getting-key-vault-secrets-in-azure-functions-37620fd20a0b "Tenant ID")
-
-Finally, please contribute and let us know 
+Finally, we want to hear from you. Please contribute and let us know what other use cases you come up with.
+ 
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
