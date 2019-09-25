@@ -25,8 +25,7 @@ This repo contains sample code demonstrating how you can build a custom AIP Trac
 
 Why should you build something like this? For starters, you have more flexibility and can display the right data to end user. Additionally, you could combine the data provided by AIP with other datasets within your organization to enrich the context of the information displayed to your users.
 
-Please read our blog [for more details on this solution](https://dev.loganalytics.io/oms/documentation/1-Tutorials/1-Direct-API
-"Custom AIP Portal Blog")
+Please read our blog [for more details on this solution](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/How-to-Build-a-Custom-AIP-Tracking-Portal/ba-p/875849 "Custom AIP Portal Blog")
 
 ## Prerequisites
 
