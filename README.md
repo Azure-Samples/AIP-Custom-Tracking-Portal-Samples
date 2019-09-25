@@ -87,8 +87,8 @@ Use the table below to find the value for each setting and update the Web.config
 | `ida:ClientId`             | Azure AD App Registration Portal |
 | `ida:Domain`      | Domain of AAD Tenant - e.g. Contoso.Onmicrosoft.com      |
 | `ida:TenantId`    | From the [AAD Properties Blade]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties "Tenant ID")            |
-| `ida:FirstAzFunctionKey`      | Your first Azure Function Key - used to retrieve protected documents      |
-| `ida:SecondAzFunctionKey`    | Your second Azure Function Key - used to retrieve activity on the selected document          |
+| `ida:FirstAzFunctionKey`      | Your first Azure Function Key - Obtained from the **azure-function-list-documents** Function in the Azure portal      |
+| `ida:SecondAzFunctionKey`    | Your second Azure Function Key - Obtained from the **azure-function-list-activity** Function in Azure portal          |
 
 ## Update Default.aspx.cs file in the web app UI
 The presentation layer of this solution makes an HTTP request to the Azure Functions above and needs to be updated. 
@@ -100,14 +100,7 @@ Although Azure Key Vault is an optional component, we highly recommend it. As a 
 
 Please follow Jeff’s excellent walkthrough to setup Key Vault: [Configure Azure Key Vault]( https://medium.com/statuscode/getting-key-vault-secrets-in-azure-functions-37620fd20a0b "Tenant ID")
 
-## Running the sample
-
-Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
-
-## Key concepts
-
-Provide users with more context on the tools and services used in the sample. Explain some of the code that is being used and how services interact with each other.
-
+Finally, please contribute and let us know 
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
