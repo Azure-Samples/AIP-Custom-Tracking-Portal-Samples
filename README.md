@@ -52,11 +52,11 @@ While the solution is quite simple, some assembly is required.
 5. In explorer, navigate to c:\samples\AIP-Custom-Tracking-Portal-Samples and open the AIP-Custom-Tracking-Portal-Samples.sln in Visual Studio 2017 or later.  
 
 ## Add the NuGet Package
-In Visual Studio, right click the AIP-Custom-Tracking-Portal-Samples solution.  
-Click Restore NuGet Packages
+In Visual Studio, right click the **AIP-Custom-Tracking-Portal-Samples** solution.  
+Click **Restore NuGet Packages**
 
 ## Authentication
-This sample solution uses a single application (service principal) that you must register in Azure AD.
+This sample solution uses a single application (service principal) that you must register in Azure AD. Note that this service pricipal requires **Data.Reader** rights in your Log Analytics Workspace as explained on the blog above.  
 [Follow these instructions to register an application in Azure Active Directory](https://dev.loganalytics.io/oms/documentation/1-Tutorials/1-Direct-API
 "Register Azure AD app")
 
@@ -69,18 +69,17 @@ While keys may help obfuscate your HTTP endpoints during development, they are n
 
 ## Setup/Configure Azure Key Vault
 Although Azure Key Vault is an optional component, we highly recommend it. As a bonus, it’s already wired up on both Azure Functions.  
-**TODO:** Wire up Azure Key Vault on the ASP.NET Web app in this solution.
-**NOTE** - Make sure you follow the [managed identities]( https://docs.microsoft.com/en-us/azure/app-service/overview-managed-identity#creating-an-app-with-an-identity "Tenant ID") instructions as well if you decide to use Key Vault
+**TODO:** Wire up Azure Key Vault on the ASP.NET Web app in this solution.  
+**NOTE** - Make sure you follow the [managed identities]( https://docs.microsoft.com/en-us/azure/app-service/overview-managed-identity#creating-an-app-with-an-identity "Tenant ID") instructions as well if you decide to use Key Vault.
 
-Please follow Jeff’s excellent walkthrough to setup Key Vault: [Configure Azure Key Vault]( https://medium.com/statuscode/getting-key-vault-secrets-in-azure-functions-37620fd20a0b "Tenant ID")
+Please follow Jeff’s excellent walkthrough on how to setup Key Vault: [Configure Azure Key Vault]( https://medium.com/statuscode/getting-key-vault-secrets-in-azure-functions-37620fd20a0b "Tenant ID")
 
 ## Update Web.Config
 The web.config file must be updated to store several identity and application-specific settings. Several of these settings should already be populated if you created the project from scratch and configured authentication in the wizard.
 
-## Update/Add appSettings
-In the AIP-Custom-Tracking-Portal-Samples project, open the Web.config file and find the appSettings section.
-Find <!-- TODO: Update ida: settings below for your tenant and service principal -->
-Update the values in bold below with settings from the Azure AD tenant.
+## Update appSettings
+In the AIP-Custom-Tracking-Portal-Samples project, open the **Web.config** file and find the appSettings section.
+Update the values in bold below with the values from previous steps.  
 Use the table below to find the value for each setting and update the Web.config.
 
 | Key       | Value or Location                                |
@@ -93,7 +92,7 @@ Use the table below to find the value for each setting and update the Web.config
 
 ## Update Default.aspx.cs file in the web app UI
 The presentation layer of this solution makes an HTTP request to the Azure Functions above and needs to be updated. 
-Update the <APP_NAME> and <FUNCTION_NAME> inside the Default.aspx.cs file with your own values. The <APP_NAME> refers to the name of the Function app in Azure Apps Services.
+Update the <APP_NAME> and <FUNCTION_NAME> inside the **Default.aspx.cs** file with your own values. The <APP_NAME> refers to the name of the Function app in Azure Apps Services.
 
 ## Setup/Configure Azure Key Vault
 Although Azure Key Vault is an optional component, we highly recommend it. As a bonus, it’s already wired up on both Azure Functions. 
