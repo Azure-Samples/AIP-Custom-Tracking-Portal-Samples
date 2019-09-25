@@ -4,8 +4,8 @@ languages:
 - csharp
 products:
 - dotnet
-description: "Azure Information Protection Custom Tracking Portal. This sample solution helps AIP users track access to protected files shared internally and externally."
-urlFragment: "AIP-Custom-Tracking-Portal-Samples"
+description: "This sample solution helps AIP users track access to protected files shared internally and externally."
+urlFragment: "aip-custom-tracking-portal-samples"
 ---
 
 # AIP Custom Tracking Portal Sample
