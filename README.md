@@ -95,7 +95,11 @@ The presentation layer of this solution makes an HTTP request to the Azure Funct
 Update the <APP_NAME> and <FUNCTION_NAME> inside the **Default.aspx.cs** file with your own values. The <APP_NAME> refers to the name of the Function app in Azure Apps Services.
 
 Finally, we want to hear from you. Please contribute and let us know what other use cases you come up with.
- 
+
+## Sources/Attribution/License/3rd Party Code
+Unless otherwise noted, all content is licensed under MIT license.  
+JSON de/serialization provided by [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/)  
+
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
